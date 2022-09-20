@@ -8,7 +8,7 @@ module Fsm (rst, clk, aim, motion_score, detail_score, make_motion, check_motion
     logic [7:0] motion_target, detail_target; 
 
     typedef enum  {s_reset, s_make_motion, s_check_motion, s_wait_motion_sccore, s_increase_motion, s_decrease_motion, s_decode_detail, 
-    s_high_detail, s_medium_detail, s_low_detail, s_make_detail, s_check_detail, s_wait_detail_score, s_increase_detail, s_decrease_detail, s_make_video, s_done} statetype;
+    s_make_detail, s_check_detail, s_wait_detail_score, s_increase_detail, s_decrease_detail, s_make_video, s_done} statetype;
 
     statetype current_state, next_state; 
 
@@ -50,8 +50,73 @@ module Fsm (rst, clk, aim, motion_score, detail_score, make_motion, check_motion
 
             s_wait_motion_sccore: begin
                 check_motion = 0;
+                if (motion_score < motion_target) begin
+                    next_state = s_increase_motion;
+                end
+                else if (motion_score > motion_target) begin
+                    next_state = s_decrease_motion;
+                end
+
+                else if (motion_score == motion_target) begin
+                    next_state = s_decode_detail;
+                end
             end
 
+            s_increase_motion: begin
+                motion_prmt = motion_prmt + 1'b1; 
+                next_state = s_make_motion;
+            end
+
+            s_decrease_motion: begin
+                motion_prmt = motion_prmt - 1'b1; 
+                next_state = s_make_motion;
+            end
+
+            s_decode_detail: begin
+                case (aim)
+                    3'b001: detail_target = 'd30;
+                    3'b010: detail_target = 'd45;
+                    3'b100: detail_target = 'd60;
+                endcase
+                next_state = s_make_detail;
+            end
+
+            s_make_detail: begin
+                make_detail = 1;
+                next_state = s_check_detail;
+            end
+
+            s_check_detail: begin
+                make_detail = 0;
+                check_detail = 1;
+                next_state = s_wait_detail_score;
+            end
+
+            s_wait_detail_score: begin
+                check_detail = 0;
+                if (detail_score < detail_target) begin
+                    next_state = s_increase_detail;
+                end
+                else if (detail_score > detail_target) begin
+                    next_state = s_decrease_detail;
+                end
+
+                else if (detail_score == detail_target) begin
+                    next_state = s_make_video;
+                end
+            end
+
+            s_make_video: begin
+                make_video = 1;
+                next_state = s_done;
+            end
+
+            s_done: begin
+                make_video = 0;
+                if (rst) begin
+                next_state = s_reset;
+                end
+            end
         endcase
     end
 
