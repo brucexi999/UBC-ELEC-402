@@ -31,7 +31,7 @@ module Fsm (rst, clk, aim, motion_score, detail_score, make_motion, check_motion
                 motion_target = 'd100;
                 motion_prmt = 'd50;
                 detail_target = 'd0;
-                detail_prmt = 'd200;
+                detail_prmt = 'd150;
                 if (~rst) begin
                     next_state = s_make_motion;
                 end
@@ -104,6 +104,16 @@ module Fsm (rst, clk, aim, motion_score, detail_score, make_motion, check_motion
                 else if (detail_score == detail_target) begin
                     next_state = s_make_video;
                 end
+            end
+
+            s_increase_detail: begin
+                detail_prmt = detail_prmt + 1'b1; 
+                next_state = s_make_detail;
+            end
+
+            s_decrease_detail: begin
+                detail_prmt = detail_prmt - 1'b1; 
+                next_state = s_make_detail;
             end
 
             s_make_video: begin
