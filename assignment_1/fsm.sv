@@ -1,3 +1,8 @@
+/*
+Name: Shidi Xi
+Student ID: 90506648
+*/
+
 module Fsm (rst, clk, aim, motion_score, detail_score, make_motion, check_motion, make_detail, check_detail, make_video, motion_prmt, detail_prmt);
     input logic rst, clk;
     input logic [2:0] aim;

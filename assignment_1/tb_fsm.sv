@@ -1,3 +1,8 @@
+/*
+Name: Shidi Xi
+Student ID: 90506648
+*/
+
 module tb_Fsm ();
     logic rst, clk;
     logic [2:0] aim;
