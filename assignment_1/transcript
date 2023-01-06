@@ -1,0 +1,157 @@
+vsim -gui work.tb_Fsm
+# vsim -gui work.tb_Fsm 
+# Start time: 10:06:05 on Oct 06,2022
+# Loading sv_std.std
+# Loading work.tb_Fsm
+# Loading work.Fsm
+add wave -position insertpoint  \
+sim:/tb_Fsm/rst \
+sim:/tb_Fsm/clk \
+sim:/tb_Fsm/aim \
+sim:/tb_Fsm/motion_score \
+sim:/tb_Fsm/detail_score \
+sim:/tb_Fsm/make_motion \
+sim:/tb_Fsm/check_motion \
+sim:/tb_Fsm/make_detail \
+sim:/tb_Fsm/check_detail \
+sim:/tb_Fsm/make_video \
+sim:/tb_Fsm/motion_prmt \
+sim:/tb_Fsm/detail_prmt
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Bruce  Hostname: BRUCE_X  ProcessID: 17756
+#           Attempting to use alternate WLF file "./wlftmg025z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmg025z
+run -all
+# ** Error: Enable signals reset failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 29
+# ** Error: Parameters and targets initialization failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 30
+# ** Error: make_motion failed.
+#    Time: 25 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 32
+# ** Error: check_motion failed.
+#    Time: 35 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 34
+# ** Error: wait_motion_score failed.
+#    Time: 45 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 36
+# ** Error: increase_motion failed.
+#    Time: 55 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 38
+# ** Error: decrease_motion failed.
+#    Time: 95 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 41
+# ** Error: make_detail_high failed.
+#    Time: 145 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 46
+# ** Error: check_detail failed.
+#    Time: 155 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 48
+# ** Error: wait_detail_score failed.
+#    Time: 165 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 50
+# ** Error: increase_detail failed.
+#    Time: 175 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 52
+# ** Error: decrease_detail failed.
+#    Time: 215 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 55
+# ** Error: make_video failed.
+#    Time: 255 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 58
+# ** Error: done failed.
+#    Time: 265 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 60
+# ** Note: $stop    : D:/UBC-ELEC-402/assignment_1/tb_fsm.sv(63)
+#    Time: 275 ps  Iteration: 0  Instance: /tb_Fsm
+# Break in Module tb_Fsm at D:/UBC-ELEC-402/assignment_1/tb_fsm.sv line 63
+restart
+run -all
+# ** Error: Enable signals reset failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 29
+# ** Error: Parameters and targets initialization failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 30
+# ** Error: make_motion failed.
+#    Time: 25 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 32
+# ** Error: check_motion failed.
+#    Time: 35 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 34
+# ** Error: wait_motion_score failed.
+#    Time: 45 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 36
+# ** Error: increase_motion failed.
+#    Time: 55 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 38
+# ** Error: decrease_motion failed.
+#    Time: 95 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 41
+# ** Error: make_detail_high failed.
+#    Time: 145 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 46
+# ** Error: check_detail failed.
+#    Time: 155 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 48
+# ** Error: wait_detail_score failed.
+#    Time: 165 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 50
+# ** Error: increase_detail failed.
+#    Time: 175 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 52
+# ** Error: decrease_detail failed.
+#    Time: 215 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 55
+# ** Error: make_video failed.
+#    Time: 255 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 58
+# ** Error: done failed.
+#    Time: 265 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 60
+# ** Note: $stop    : D:/UBC-ELEC-402/assignment_1/tb_fsm.sv(63)
+#    Time: 275 ps  Iteration: 0  Instance: /tb_Fsm
+# Break in Module tb_Fsm at D:/UBC-ELEC-402/assignment_1/tb_fsm.sv line 63
+restart
+run -all
+# ** Error: Enable signals reset failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 29
+# ** Error: Parameters and targets initialization failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 30
+# ** Error: make_motion failed.
+#    Time: 25 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 32
+# ** Error: check_motion failed.
+#    Time: 35 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 34
+# ** Error: wait_motion_score failed.
+#    Time: 45 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 36
+# ** Error: increase_motion failed.
+#    Time: 55 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 38
+# ** Error: decrease_motion failed.
+#    Time: 95 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 41
+# ** Error: make_detail_high failed.
+#    Time: 145 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 46
+# ** Error: check_detail failed.
+#    Time: 155 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 48
+# ** Error: wait_detail_score failed.
+#    Time: 165 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 50
+# ** Error: increase_detail failed.
+#    Time: 175 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 52
+# ** Error: decrease_detail failed.
+#    Time: 215 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 55
+# ** Error: make_video failed.
+#    Time: 255 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 58
+# ** Error: done failed.
+#    Time: 265 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 60
+# ** Note: $stop    : D:/UBC-ELEC-402/assignment_1/tb_fsm.sv(63)
+#    Time: 275 ps  Iteration: 0  Instance: /tb_Fsm
+# Break in Module tb_Fsm at D:/UBC-ELEC-402/assignment_1/tb_fsm.sv line 63
+restart
+run -all
+# ** Error: Enable signals reset failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 29
+# ** Error: Parameters and targets initialization failed.
+#    Time: 15 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 30
+# ** Error: make_motion failed.
+#    Time: 25 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 32
+# ** Error: check_motion failed.
+#    Time: 35 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 34
+# ** Error: wait_motion_score failed.
+#    Time: 45 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 36
+# ** Error: increase_motion failed.
+#    Time: 55 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 38
+# ** Error: decrease_motion failed.
+#    Time: 95 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 41
+# ** Error: make_detail_high failed.
+#    Time: 145 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 46
+# ** Error: check_detail failed.
+#    Time: 155 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 48
+# ** Error: wait_detail_score failed.
+#    Time: 165 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 50
+# ** Error: increase_detail failed.
+#    Time: 175 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 52
+# ** Error: decrease_detail failed.
+#    Time: 215 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 55
+# ** Error: make_video failed.
+#    Time: 255 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 58
+# ** Error: done failed.
+#    Time: 265 ps  Scope: tb_Fsm File: D:/UBC-ELEC-402/assignment_1/tb_fsm.sv Line: 60
+# ** Note: $stop    : D:/UBC-ELEC-402/assignment_1/tb_fsm.sv(63)
+#    Time: 275 ps  Iteration: 0  Instance: /tb_Fsm
+# Break in Module tb_Fsm at D:/UBC-ELEC-402/assignment_1/tb_fsm.sv line 63
+# End time: 21:43:44 on Oct 06,2022, Elapsed time: 11:37:39
+# Errors: 56, Warnings: 2

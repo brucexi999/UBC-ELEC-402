@@ -1,0 +1,83 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/UBC-ELEC-402/assignment_1
+vShift_reg
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 17 shift_reg_sv_unit 0 22 8?Y2YDK3z:HlKO^VIkTW`3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 XezBnLCLGIRX<NbIlzN;91
+IDnm2[8?DnfGdHHGYTgfTk2
+!s105 shift_reg_sv_unit
+S1
+Z2 dD:/UBC-ELEC-402/course_material
+Z3 w1663737395
+Z4 8D:/UBC-ELEC-402/course_material/shift_reg.sv
+Z5 FD:/UBC-ELEC-402/course_material/shift_reg.sv
+L0 3
+Z6 OV;L;10.5b;63
+Z7 !s108 1663737397.000000
+Z8 !s107 D:/UBC-ELEC-402/course_material/shift_reg.sv|
+Z9 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC-ELEC-402/course_material/shift_reg.sv|
+!i113 1
+Z10 o-work work -sv
+Z11 tCvgOpt 0
+n@shift_reg
+Xshift_reg_sv_unit
+R0
+V8?Y2YDK3z:HlKO^VIkTW`3
+r1
+!s85 0
+31
+!i10b 1
+!s100 :c3IOkTSoml@Jj4:iZj9U2
+I8?Y2YDK3z:HlKO^VIkTW`3
+!i103 1
+S1
+R2
+R3
+R4
+R5
+L0 2
+R6
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_Shift_reg
+R0
+!s110 1663738239
+!i10b 1
+!s100 @;e<mY[Wh=N^b<7AkTD0;1
+IBajSN:WF2Cg<MR`N6MMi]0
+R1
+!s105 tb_shift_reg_sv_unit
+S1
+R2
+w1663738234
+8D:/UBC-ELEC-402/course_material/tb_shift_reg.sv
+FD:/UBC-ELEC-402/course_material/tb_shift_reg.sv
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1663738239.000000
+!s107 D:/UBC-ELEC-402/course_material/tb_shift_reg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC-ELEC-402/course_material/tb_shift_reg.sv|
+!i113 1
+R10
+R11
+ntb_@shift_reg

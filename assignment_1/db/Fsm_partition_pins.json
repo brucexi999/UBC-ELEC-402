@@ -1,0 +1,177 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "make_motion",
+					"strict" : false
+				},
+				{
+					"name" : "check_motion",
+					"strict" : false
+				},
+				{
+					"name" : "make_detail",
+					"strict" : false
+				},
+				{
+					"name" : "check_detail",
+					"strict" : false
+				},
+				{
+					"name" : "make_video",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[5]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[6]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_prmt[7]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[5]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[6]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_prmt[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[5]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[6]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[1]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[0]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[5]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[4]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[2]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[3]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[6]",
+					"strict" : false
+				},
+				{
+					"name" : "detail_score[7]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[7]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[2]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[0]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[1]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[3]",
+					"strict" : false
+				},
+				{
+					"name" : "motion_score[4]",
+					"strict" : false
+				},
+				{
+					"name" : "aim[0]",
+					"strict" : false
+				},
+				{
+					"name" : "aim[1]",
+					"strict" : false
+				},
+				{
+					"name" : "aim[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

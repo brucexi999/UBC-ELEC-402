@@ -1,0 +1,15 @@
+D:/UBC-ELEC-402/assignment_1/fsm.sv {1 {vlog -work work -sv -stats=none D:/UBC-ELEC-402/assignment_1/fsm.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Fsm
+
+Top level modules:
+	Fsm
+
+} {} {}} D:/UBC-ELEC-402/assignment_1/tb_fsm.sv {1 {vlog -work work -sv -stats=none {D:\UBC-ELEC-402\assignment_1\tb_fsm.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_Fsm
+
+Top level modules:
+	tb_Fsm
+
+} {} {}}
